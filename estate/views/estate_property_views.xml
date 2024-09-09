@@ -1,5 +1,5 @@
 <record id="view_property_form" model="ir.actions.act_window">
-    <field name="name">estate.property.form</field>
+    <field name="name">estate.property.action</field>
     <field name="res_model">estate.property</field>
     <field name="view_mode">tree,form</field>
 </record>
