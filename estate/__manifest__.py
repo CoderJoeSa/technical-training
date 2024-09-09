@@ -5,6 +5,7 @@
     "depends": ["base"],  # dependencies
     "data": [
 
+
     ],
     "installable": True,
     'license': 'LGPL-3',
