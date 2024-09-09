@@ -1,7 +1,7 @@
-<record id="view_property_form" model="ir.actions.act_window">
+<record id="view_property_form" model="ir.ui.view">
     <field name="name">estate.property.form</field>
-    <field name="res.model">estate.property</field>
-    <field name="view_mode">tree,form</field>
+    <field name="model">estate.property</field>
+    <field name="arch" type="xml">
         <form string="Property">
             <sheet>
                 <group>
@@ -18,7 +18,15 @@
                 </group>
             </sheet>
         </form>
-    
-<menuitem id="menu_estate_property" name="Properties" parent="menu_estate" action="view_property_form"/>
+    </field>
 </record>
+
+<record id="action_property_form" model="ir.actions.act_window">
+    <field name="name">Properties</field>
+    <field name="res_model">estate.property</field>
+    <field name="view_mode">tree,form</field>
+    <field name="view_id" ref="view_property_form"/>
+</record>
+
+<menuitem id="menu_estate_property" name="Properties" parent="menu_estate" action="action_property_form"/>
 
