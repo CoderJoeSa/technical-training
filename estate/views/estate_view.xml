@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <odoo>
-    <record id="view_detail" model="ir.iu.view">
+    <record id="view_detail" model="ir.ui.view">
         <field name="name">estate.property.form</field>
         <field name="model">estate.property</field>
         <field name="arch" type="xml">
@@ -11,4 +11,4 @@
             </tree>
         </field>
     </record>
-
+</odoo>
