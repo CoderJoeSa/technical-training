@@ -1,3 +1,6 @@
+from odoo import api, fields, models, _
+
+
 class TestModel(models.Model):
     _name = "test.model"
     _description = "Test Model"
