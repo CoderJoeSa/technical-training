@@ -1,4 +1,4 @@
-from odoo import models
+from odoo import fields, models
 
 class TestModel(models.Model):
     _name = "test.model"
