@@ -2,7 +2,6 @@
     <field name="name">estate.property.form</field>
     <field name="res.model">estate.property</field>
     <field name="view_mode">tree,form</field>
-    <field name="arch" type="xml">
         <form string="Property">
             <sheet>
                 <group>
