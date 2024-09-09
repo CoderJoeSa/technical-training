@@ -8,6 +8,9 @@
           <tree string="Tests">
                 <field name="name"/>
                 <field name="last_seen"/>
+                <field name="state"/>
+                <field name="price"/>
+                <field name="garden_orientation"/>
                 
             </tree>
         </field>
