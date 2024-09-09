@@ -8,6 +8,7 @@
         'views/estate_menu.xml',
         'views/estate_property_views.xml',
         'views/estate_view.xml',
+        'views/state_form.xml',
     ],
     "installable": True,
     'license': 'LGPL-3',
