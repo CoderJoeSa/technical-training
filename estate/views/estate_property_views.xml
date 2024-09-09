@@ -2,20 +2,6 @@
     <field name="name">estate.property.form</field>
     <field name="res_model">estate.property</field>
     <field name="view_mode">tree,form</field>
-        <form string="Property">
-            <sheet>
-                <group>
-                    <field name="name"/>
-                    <field name="property_type_id"/>
-                    <field name="description"/>
-                    <field name="bedrooms"/>
-                    <field name="bathrooms"/>
-                    <field name="state"/>
-                    <field name="city"/>
-                    <field name="price"/>
-                    <field name="currency_id"/>
-                    <field name="active"/>
-                </group>
-            </sheet>
-        </form>
 </record>
+
+    <menuitem id="menu_estate" name="Estate" parent="base.menu_real_estate" sequence="10"/>
