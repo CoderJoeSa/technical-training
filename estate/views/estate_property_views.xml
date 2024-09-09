@@ -4,4 +4,4 @@
     <field name="view_mode">tree,form</field>
 </record>
 
-    <menuitem id="menu_estate" name="Estate" parent="base.menu_real_estate" sequence="10"/>
+    
