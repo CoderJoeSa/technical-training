@@ -20,6 +20,5 @@
         </form>
     </field>
 </record>
-
-<menuitem id="menu_estate_property" name="Properties" parent="menu_estate" action="action_property_form"/>
-
+```
+<menuitem id="menu_estate_property" name="Properties" parent="menu_estate" action="action_estate_property"/>
