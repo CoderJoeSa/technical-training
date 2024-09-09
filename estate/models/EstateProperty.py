@@ -8,7 +8,7 @@ class estate_property(models.Model):
     description = fields.Text(string="Description")
     country_id = fields.Many2one("res.country", string="Country")
     postcode = fields.Char(string="Postcode")
-    date_availability = fields.Date(string="Availability" , default=fields.Date.today nowrap=True)
+    date_availability = fields.Date(string="Availability" , default=fields.Date.today, nowrap=True)
     expected_price = fields.Float(string="Expected Price")
     selling_price = fields.Float(string="Selling Price" , readonly=True)
     bedrooms = fields.Integer(string="Bedrooms")
