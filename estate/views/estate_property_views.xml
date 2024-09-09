@@ -18,7 +18,7 @@
                 </group>
             </sheet>
         </form>
-    </field>
+    
 <menuitem id="menu_estate_property" name="Properties" parent="menu_estate" action="view_property_form"/>
 </record>
 
