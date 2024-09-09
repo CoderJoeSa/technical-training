@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <odoo>
-    <menuitem id="estate_menu" name="Estate" sequence="10">
+    <menuitem id="estate_menu" name="Estate" sequence="10"/>
     <menuitem id="estate_menu_properties" name="Properties" parent="estate_menu" action="estate_action" sequence="10"/>
     <menuitem id="estate_menu_property_types" name="Property Types" parent="estate_menu" action="estate_action" sequence="20"/>
     
