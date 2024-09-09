@@ -1,7 +1,7 @@
 <record id="view_property_form" model="ir.ui.view">
     <field name="name">estate.property.form</field>
     <field name="model">estate.property</field>
-    <field name="arch" type="xml">
+    <field name="view_mode">tree,form</field>
         <form string="Property">
             <sheet>
                 <group>
@@ -19,6 +19,3 @@
             </sheet>
         </form>
     </field>
-</record>
-```
-<menuitem id="menu_estate_property" name="Properties" parent="menu_estate" action="action_estate_property"/>
