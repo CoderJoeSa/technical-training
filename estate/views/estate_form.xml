@@ -13,8 +13,8 @@
                             <field name="description"/>
                         </group>
                         <group>
-                            <field name="bedrooms" class="oe_inline"/>
-                            <field name="bathrooms" class="oe_inline"/>
+                            <field name="garden" class="oe_inline"/>
+                            <field name="garage" class="oe_inline"/>
                             <field name="area"/>
                         </group>
                     </group>
