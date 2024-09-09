@@ -1,0 +1,22 @@
+<record id="view_property_form" model="ir.actions.act_window">
+    <field name="name">estate.property.form</field>
+    <field name="res.model">estate.property</field>
+    <field name="view_mode">tree,form</field>
+    <field name="arch" type="xml">
+        <form string="Property">
+            <sheet>
+                <group>
+                    <field name="name"/>
+                    <field name="property_type_id"/>
+                    <field name="description"/>
+                    <field name="bedrooms"/>
+                    <field name="bathrooms"/>
+                    <field name="state"/>
+                    <field name="city"/>
+                    <field name="price"/>
+                    <field name="currency_id"/>
+                    <field name="active"/>
+                </group>
+            </sheet>
+        </form>
+    </field>
