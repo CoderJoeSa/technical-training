@@ -8,9 +8,9 @@ class estate_property(models.Model):
     description = fields.Text(string="Description")
     country_id = fields.Many2one("res.country", string="Country")
     postcode = fields.Char(string="Postcode")
-    date_availability = fields.Date(string="Availability")
+    date_availability = fields.Date(string="Availability" , default=fields.Date.today nowrap=True)
     expected_price = fields.Float(string="Expected Price")
-    selling_price = fields.Float(string="Selling Price")
+    selling_price = fields.Float(string="Selling Price" , readonly=True)
     bedrooms = fields.Integer(string="Bedrooms")
     living_area = fields.Integer(string="Living Area")
     facades = fields.Integer(string="Facades")
@@ -21,3 +21,9 @@ class estate_property(models.Model):
         string="Garden Orientation",
         selection=[('north', 'North'), ('south', 'South'), ('east', 'East'), ('west', 'West')],
     )
+    state = fields.Selection(
+        string="Status",
+        selection=[('new', 'New'), ('offer_received', 'Offer Received'), ('offer_accepted', 'Offer Accepted'), ('sold', 'Sold')],
+        default='new',
+    )
+    active = fields.Boolean(string="Active", default=True)
