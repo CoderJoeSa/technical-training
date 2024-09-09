@@ -20,8 +20,8 @@
                         </group>
                     </group>
                     <notebook>
-                        <page string="description"/>
-                        <field name="description"/>
+                        <page string="Description">
+                            <field name="description"/>
                         </page>
                     </notebook>
                 </sheet>
