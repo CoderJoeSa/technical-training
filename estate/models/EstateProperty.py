@@ -6,6 +6,7 @@ class estate_property(models.Model):
 
     name = fields.Char(string="Title", required=True)
     description = fields.Text(string="Description")
+    country_id = fields.Many2one("res.country", string="Country")
     postcode = fields.Char(string="Postcode")
     date_availability = fields.Date(string="Availability")
     expected_price = fields.Float(string="Expected Price")
