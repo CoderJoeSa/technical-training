@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <record id="view_form" model="ir.ui.view">
+        <field name="name">estate.property.form</field>
+        <field name="model">estate.property</field>
+        <field name="arch" type="xml">
+            <form string="Property">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="property_type_id"/>
+                            <field name="description"/>
+                        </group>
+                        <group>
+                            <field name="bedrooms" class="oe_inline"/>
+                            <field name="bathrooms" class="oe_inline"/>
+                            <field name="area"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="description"/>
+                        <field name="description"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
