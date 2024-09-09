@@ -1,11 +1,7 @@
-from odoo import api, fields, models, _
-
+from odoo import fields, models
 
 class TestModel(models.Model):
-    _name = "test.model"
+    _name = "test_model"
     _description = "Test Model"
-    _order = "secuence"
 
-
-    name = fields.Char(string="Name", required=True)  
-    description = fields.Text(string="Description")
+    name = fields.Char()
