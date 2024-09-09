@@ -27,3 +27,4 @@ class estate_property(models.Model):
         default='new',
     )
     active = fields.Boolean(string="Active", default=True)
+    last_seen = fields.Datetime(string="Last Seen", readonly=True)
