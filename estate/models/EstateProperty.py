@@ -41,3 +41,9 @@ class estate_property(models.Model):
     def _compute_total_area(self):
         for rec in self:
             rec.total_area = rec.living_area + rec.garden_area
+
+    def _compute_best_price(self):
+        for rec in self:
+            rec.best_price = rec.expected_price - 10000
+
+            
