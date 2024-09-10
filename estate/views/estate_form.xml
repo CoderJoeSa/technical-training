@@ -19,6 +19,7 @@
                         <group>
                             <field name="buyer_id"/>
                             <field name="user_id"/>
+                        </group>
                     </group>
                     <notebook>
                         <page string="Description">
