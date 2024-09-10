@@ -16,6 +16,9 @@
                             <field name="expected_price" class="oe_inline"/>
                             <field name="selling_price" class="oe_inline"/>
                         </group>
+                        <group>
+                            <field name="buyer_id"/>
+                            <field name="user_id"/>
                     </group>
                     <notebook>
                         <page string="Description">
