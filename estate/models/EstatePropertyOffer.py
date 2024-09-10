@@ -1,6 +1,7 @@
 from odoo import fields, models, api
+from datetime import timedelta
 
-class estate_property_offer (models.Model):
+class EstatePropertyOffer(models.Model):
     _name = "estate.property.offer"
     _description = "Estate Property Offer"
 
@@ -15,15 +16,13 @@ class estate_property_offer (models.Model):
     validity = fields.Integer(string="Validity", default=7)
     date_deadline = fields.Date(string="Deadline", compute="_compute_date_deadline", inverse="_inverse_date_deadline", store=True)
 
-   
-    @api.depends('validity')
+    @api.depends('create_date', 'validity')
     def _compute_date_deadline(self):
-            for rec in self:
-                if rec.create_date:
-                    create_date = fields.Datetime.from_string(rec.create_date)
-                    rec.date_deadline = create_date 
+        for rec in self:
+            if rec.create_date:
+                rec.date_deadline = rec.create_date.date() + timedelta(days=rec.validity)
 
     def _inverse_date_deadline(self):
         for rec in self:
-            rec.create_date = fields.Datetime.to_string(rec.date_deadline)
-            
+            if rec.date_deadline:
+                rec.create_date = fields.Datetime.combine(rec.date_deadline, rec.create_date.time())
