@@ -6,6 +6,7 @@
         <field name="model">estate.property</field>
         <field name="arch" type="xml">
           <tree string="Tests">
+                <field name="postcode"/>
                 <field name="name"/>
                 <field name="last_seen"/>
                 <field name="state"/>
