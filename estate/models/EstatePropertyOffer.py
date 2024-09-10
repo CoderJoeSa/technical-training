@@ -1,4 +1,4 @@
-from odoo import fields, models
+from odoo import fields, models, api
 
 class estate_property_offer (models.Model):
     _name = "estate.property.offer"
@@ -12,4 +12,18 @@ class estate_property_offer (models.Model):
         selection=[('accepted', 'Accepted'), ('refused', 'Refused'), ('pending', 'Pending')],
         default='pending',
     )
+    validity = fields.Integer(string="Validity", default=7)
+    date_deadline = fields.Date(string="Deadline", compute="_compute_date_deadline", inverse="_inverse_date_deadline", store=True)
+
    
+    @api.depends('validity')
+    def _compute_date_deadline(self):
+            for rec in self:
+                if rec.create_date:
+                    create_date = fields.Datetime.from_string(rec.create_date)
+                    rec.date_deadline = create_date 
+
+    def _inverse_date_deadline(self):
+        for rec in self:
+            rec.create_date = fields.Datetime.to_string(rec.date_deadline)
+            
