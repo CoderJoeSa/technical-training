@@ -9,6 +9,7 @@
                 <sheet>
                     <group>
                         <group>
+                            <field name="state"/>
                             <field name="postcode"/>
                             <field name="date_availability"/>
                         </group>

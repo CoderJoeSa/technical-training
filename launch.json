@@ -1,0 +1,26 @@
+{
+
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "test",
+            "type": "debugpy",
+            "request": "launch",
+            "cwd": "/Users/simon/odoo/versions/17.0/odoo/",
+            "python": "/Users/simon/odoo/versions/17.0/venv/bin/python",
+            "program": "./odoo-bin",
+            "args": [
+                "--addons-path=addons,../enterprise,../design-themes,/Users/simon/odoo/projects/technical-training",
+                "--log-handler",
+                "odoo.addons.base.models.ir_attachment:WARNING",
+                "-u",
+                "estate",
+                "-d",
+                "test",
+                "--limit-time-real", "0",
+                "--limit-time-cpu", "0"
+            ],
+            "console": "externalTerminal"
+        }
+    ]
+}

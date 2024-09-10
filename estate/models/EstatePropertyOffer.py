@@ -19,6 +19,7 @@ class EstatePropertyOffer(models.Model):
     
 
 
+
     @api.depends('create_date', 'validity')
     def _compute_date_deadline(self):
         for rec in self:
