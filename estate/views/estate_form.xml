@@ -24,14 +24,17 @@
                     <notebook>
                         <page string="Description">
                             <group>
-                            <field name="description" />
-                            <field name="bedrooms"/>
-                            <field name="living_area"/>
-                            <field name="facades"/>
-                            <field name="garage"/>
-                            <field name="garden"/>
-                            <field name="garden_orientation"/>
-                            <field name="garden_area"/>
+                                <field name="description" />
+                                <field name="bedrooms"/>
+                                <field name="living_area"/>
+                                <field name="facades"/>
+                                <field name="garage"/>
+                                <field name="garden"/>
+                                <field name="garden_orientation"/>
+                                <field name="garden_area"/>
+                            </group>
+                            <group>
+                                <field name="tags_id"/>
                             </group>
                         </page>
                     </notebook>
