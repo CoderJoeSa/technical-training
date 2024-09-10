@@ -28,3 +28,4 @@ class estate_property(models.Model):
     )
     active = fields.Boolean(string="Active", default=True)
     last_seen = fields.Datetime(string="Last Seen", readonly=True)
+    property_type_id = fields.Many2one("estate.property.type", string="Property Type")
