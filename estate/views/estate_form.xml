@@ -19,6 +19,7 @@
                     </group>
                     <notebook>
                         <page string="Description">
+                            
                             <field name="description" />
                             <field name="bedrooms"/>
                             <field name="living_area"/>
