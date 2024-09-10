@@ -12,7 +12,4 @@ class estate_property_offer (models.Model):
         selection=[('accepted', 'Accepted'), ('refused', 'Refused'), ('pending', 'Pending')],
         default='pending',
     )
-    validity = fields.Integer(string="Validity", default=7)
-    date_deadline = fields.Date(string="Deadline")
-    currency_id = fields.Many2one("res.currency", string="Currency", required=True, default=lambda self: self.env.company.currency_id)
-    notes = fields.Text(string="Notes")
+   
